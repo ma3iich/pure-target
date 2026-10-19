@@ -22,6 +22,25 @@ Hold <kbd>Left Alt</kbd>, right-click anything in the world, and act on it.
 
 ---
 
+## Preview
+
+> The options shown in these clips come from our own server's scripts, built with Pure-Target's API.
+> On your server, the menu shows the options of your own scripts.
+
+### On yourself
+
+https://github.com/user-attachments/assets/e0ece559-51f3-4127-bd8c-4b6fcd316272
+
+### On a vehicle
+
+https://github.com/user-attachments/assets/2f420804-ee8d-43c6-9f0b-4ba30d6e3195
+
+### On another player
+
+https://github.com/user-attachments/assets/cd7b0413-4c3d-415d-89a3-28ff4a7c494b
+
+---
+
 ## Features
 
 - **Right-click menu** instead of the classic "eye": hold the key, a cursor appears, right-click what you want.

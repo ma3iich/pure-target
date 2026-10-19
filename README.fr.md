@@ -22,6 +22,25 @@ Maintiens <kbd>Alt gauche</kbd>, fais un clic droit sur n'importe quoi dans le m
 
 ---
 
+## Aperçu
+
+> Les options visibles dans ces clips viennent des scripts de notre serveur, construits avec l'API de Pure-Target.
+> Sur ton serveur, le menu affiche les options de tes propres scripts.
+
+### Sur soi
+
+https://github.com/user-attachments/assets/e0ece559-51f3-4127-bd8c-4b6fcd316272
+
+### Sur un véhicule
+
+https://github.com/user-attachments/assets/2f420804-ee8d-43c6-9f0b-4ba30d6e3195
+
+### Sur un autre joueur
+
+https://github.com/user-attachments/assets/cd7b0413-4c3d-415d-89a3-28ff4a7c494b
+
+---
+
 ## Fonctionnalités
 
 - **Menu clic droit** à la place du classique « œil » : on maintient la touche, un curseur apparaît, on fait un
