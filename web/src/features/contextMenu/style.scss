@@ -1,0 +1,305 @@
+// Thin-line theme: dark semi-transparent background, white Poppins text, white Tabler icons (see icons.ts).
+// A coloured option only colours its ICON. No title in the menus (headers are hidden, see .ctx-header).
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+$bg: rgba(20, 20, 24, 0.74);
+$border: rgba(255, 255, 255, 0.07);
+$hover: rgba(255, 255, 255, 0.09);
+$text: rgba(255, 255, 255, 0.94);
+$bright: #fff;
+$muted: rgba(255, 255, 255, 0.42);
+$accent: #ffffff;
+
+@mixin glass {
+  background: $bg;
+  border: 1px solid $border;
+  border-radius: 6px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+}
+
+@keyframes ctx-pop {
+  from { opacity: 0; transform: scale(0.96) translateY(-3px); }
+  to   { opacity: 1; transform: scale(1)    translateY(0);    }
+}
+
+@keyframes ctx-slide {
+  from { opacity: 0; transform: translateX(-5px); }
+  to   { opacity: 1; transform: translateX(0);     }
+}
+
+@keyframes ctx-slide-left {
+  from { opacity: 0; transform: translateX(5px); }
+  to   { opacity: 1; transform: translateX(0);    }
+}
+
+.ctx-root {
+  position: absolute;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  // Poppins has no Chinese / Japanese / Korean / Cyrillic... glyphs: the browser then uses the next fonts
+  // (shipped with Windows, so always present for FiveM players).
+  font-family: 'Poppins', 'Segoe UI', 'Microsoft YaHei', 'Yu Gothic UI', 'Meiryo', 'Malgun Gothic', sans-serif;
+  * { pointer-events: auto; box-sizing: border-box; }
+}
+
+.ctx-anchor {
+  position: absolute;
+  pointer-events: none;
+  * { pointer-events: auto; }
+}
+
+.ctx-list {
+  @include glass;
+  list-style: none;
+  margin: 0;
+  padding: 3px 0;
+  // Compact menu, labels never cut: the list is as wide as its longest label, never wider than the screen.
+  min-width: 170px;
+  width: max-content;
+  max-width: calc(100vw - 16px);
+  overflow: visible;
+  animation: ctx-pop 0.13s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+// No scrollbar: a list taller than the screen is split into columns (fitList, index.tsx).
+.ctx-list.ctx-cols {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 2px;
+  align-items: center;
+}
+
+.ctx-header {
+  display: none; // no titles (set to flex to show submenu headers)
+  align-items: center;
+  gap: 6px;
+  padding: 7px 10px 6px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $muted;
+  border-bottom: 1px solid $border;
+  margin-bottom: 3px;
+  cursor: default;
+  user-select: none;
+
+  i { font-size: 8px; }
+}
+
+.ctx-sep {
+  height: 1px;
+  background: $border;
+  margin: 3px 8px;
+  pointer-events: none;
+}
+
+.ctx-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 9px;
+  margin: 1px 3px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.08s ease;
+  user-select: none;
+
+  &:hover {
+    background: $hover;
+    > .ctx-label { color: $bright; }
+    > .ctx-icon  { color: $bright; }
+    > .ctx-arrow { color: rgba(255,255,255,0.6); }
+    > .ctx-submenu { display: block; }
+  }
+
+  &.ctx-disabled {
+    opacity: 0.4;
+    > .ctx-label { text-decoration: line-through; }
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  // coloured option: only the icon takes the colour
+  &[style*="--accent"] {
+    > .ctx-icon,
+    &:hover > .ctx-icon { color: var(--accent); }
+  }
+}
+
+.ctx-icon {
+  width: 15px;
+  min-width: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: $text;
+
+  i.fa-solid, i.fa-regular, i.fas, i.far { font-size: 12px; }
+  transition: color 0.08s;
+}
+
+.ctx-label {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: $text;
+  transition: color 0.08s;
+  // never cut with "…": wraps only when the menu reaches the screen width
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.ctx-badge {
+  font-size: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.06);
+  border: 1px solid $border;
+  padding: 1px 6px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.ctx-check {
+  width: 15px;
+  height: 15px;
+  min-width: 15px;
+  border: 1px solid rgba(255,255,255,0.28);
+  border-radius: 4px;
+  background: rgba(255,255,255,0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 7px;
+  color: transparent;
+  flex-shrink: 0;
+  transition: all 0.12s ease;
+
+  &.is-checked {
+    background: #fff;
+    border-color: #fff;
+    color: #16161a;
+  }
+}
+
+.ctx-arrow {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.32);
+  flex-shrink: 0;
+  transition: color 0.08s;
+}
+
+.ctx-submenu {
+  display: none;
+  position: absolute;
+  top: -5px;
+  left: calc(100% + 8px);
+  z-index: 10;
+  animation: ctx-slide 0.11s cubic-bezier(0.16, 1, 0.3, 1);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -9px;
+    width: 9px;
+    height: 100%;
+  }
+
+  .ctx-list {
+    animation: ctx-slide 0.11s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+}
+
+// Submenu opened on the LEFT when there is no room on the right (class set by fitSubmenu, index.tsx).
+// The invisible bridge (::before) that keeps the hover then moves to the right of the submenu.
+.ctx-item.ctx-flip-x > .ctx-submenu {
+  left: auto;
+  right: calc(100% + 8px);
+  animation-name: ctx-slide-left;
+
+  &::before {
+    left: auto;
+    right: -9px;
+  }
+
+  .ctx-list {
+    animation-name: ctx-slide-left;
+  }
+}
+
+.ctx-pages {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 9px 3px;
+  margin-top: 2px;
+  border-top: 1px solid $border;
+  font-size: 10px;
+  color: $muted;
+}
+
+.ctx-pgbtn {
+  background: none;
+  border: none;
+  color: $muted;
+  cursor: pointer;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 9px;
+  transition: all 0.08s;
+
+  &:hover:not(:disabled) {
+    background: $hover;
+    color: $bright;
+  }
+
+  &:disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+  }
+}
+
+.ctx-desc {
+  @include glass;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  padding: 7px 10px;
+  min-width: 170px;
+  max-width: min(360px, calc(100vw - 16px));
+  width: 100%;
+  animation: ctx-pop 0.1s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+
+  // Tooltip above the menu when the bottom of the screen is too close.
+  &.ctx-desc-above {
+    top: auto;
+    bottom: calc(100% + 4px);
+  }
+
+  i {
+    font-size: 10px;
+    color: $muted;
+    margin-top: 2px;
+    flex-shrink: 0;
+  }
+
+  span {
+    font-size: 11.5px;
+    line-height: 1.5;
+    color: $text;
+    font-weight: 400;
+    white-space: normal;
+    word-break: break-word;
+  }
+}
