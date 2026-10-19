@@ -13,6 +13,7 @@ Hold <kbd>Left Alt</kbd>, right-click anything in the world, and act on it.
 ![Standalone](https://img.shields.io/badge/framework-standalone-lightgrey)
 ![License](https://img.shields.io/badge/license-MIT-green)
 [![Downloads](https://img.shields.io/github/downloads/stefanlesuisse/pure-target/total?label=Downloads&color=2ea44f)](https://github.com/stefanlesuisse/pure-target/releases)
+[![YouTube](https://img.shields.io/badge/YouTube-%40ma3iich-red?logo=youtube&logoColor=white)](https://www.youtube.com/@ma3iich)
 
 *Fork of [Off-Target](https://www.youtube.com/watch?v=peS7m275vEY) by OffSey.*
 
