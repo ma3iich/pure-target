@@ -2,96 +2,114 @@
 
 [![English](https://img.shields.io/badge/Language-English-2ea44f)](README.md) [![Français](https://img.shields.io/badge/Langue-Fran%C3%A7ais-555)](README.fr.md)
 
-# 🎯 Pure-Target
+<img src="docs/banner.png" alt="Pure-Target — the right-click context menu for FiveM" width="100%">
 
-**A standalone right-click context menu for FiveM — drop-in replacement for `ox_target`, `qtarget` and `qb-target`.**
+<br>
 
+**A standalone right-click context menu for FiveM — drop-in replacement for `ox_target`, `qtarget` and `qb-target`.**<br>
 Hold <kbd>Left Alt</kbd>, right-click anything in the world, and act on it.
 
-![FiveM](https://img.shields.io/badge/FiveM-resource-orange)
-![Lua](https://img.shields.io/badge/Lua-5.4-blue)
-![Standalone](https://img.shields.io/badge/framework-standalone-lightgrey)
-![License](https://img.shields.io/badge/license-MIT-green)
+<br>
+
+[![FiveM](https://img.shields.io/badge/FiveM-resource-F26722?logo=fivem&logoColor=white)](https://fivem.net)
+[![Lua](https://img.shields.io/badge/Lua-5.4-2C2D72?logo=lua&logoColor=white)](https://www.lua.org)
+[![Standalone](https://img.shields.io/badge/framework-standalone-6e7681)](#%EF%B8%8F-configuration)
+[![License](https://img.shields.io/badge/license-MIT-3fb950)](LICENSE)
 [![Downloads](https://img.shields.io/github/downloads/stefanlesuisse/pure-target/total?label=Downloads&color=2ea44f)](https://github.com/stefanlesuisse/pure-target/releases)
 [![YouTube](https://img.shields.io/badge/YouTube-%40ma3iich-red?logo=youtube&logoColor=white)](https://www.youtube.com/@ma3iich)
 
-*Fork of [Off-Target](https://www.youtube.com/watch?v=peS7m275vEY) by OffSey.*
+**[⬇️ Download](https://github.com/stefanlesuisse/pure-target/releases/latest)** &nbsp;·&nbsp;
+**[📦 Installation](#-installation)** &nbsp;·&nbsp;
+**[⚙️ Configuration](#%EF%B8%8F-configuration)** &nbsp;·&nbsp;
+**[📚 Exports](exports.md)**
 
-<img src="docs/preview.png" alt="Pure-Target menu" width="700">
+<sub>Fork of <a href="https://www.youtube.com/watch?v=peS7m275vEY">Off-Target</a> by OffSey · Made by <a href="https://github.com/stefanlesuisse">stefanlesuisse</a></sub>
 
 </div>
 
 ---
 
-## Preview
+## 🎬 Preview
 
+<table>
+  <tr>
+    <th width="33%">🧍 On yourself</th>
+    <th width="33%">🚗 On a vehicle</th>
+    <th width="33%">👥 On another player</th>
+  </tr>
+  <tr>
+    <td><video src="https://github.com/user-attachments/assets/febb8a09-3055-4492-b8f2-6df00d5b6ddb" width="100%" controls muted></video></td>
+    <td><video src="https://github.com/user-attachments/assets/3a4e1e92-412c-4db3-99e9-873c5bdfd65a" width="100%" controls muted></video></td>
+    <td><video src="https://github.com/user-attachments/assets/72a18f0b-32a2-4ec7-91aa-7314a5673ad0" width="100%" controls muted></video></td>
+  </tr>
+</table>
+
+> [!NOTE]
 > The options shown in these clips come from our own server's scripts, built with Pure-Target's API.
-> On your server, the menu shows the options of your own scripts.
-
-### On yourself
-
-https://github.com/user-attachments/assets/e0ece559-51f3-4127-bd8c-4b6fcd316272
-
-### On a vehicle
-
-https://github.com/user-attachments/assets/2f420804-ee8d-43c6-9f0b-4ba30d6e3195
-
-### On another player
-
-https://github.com/user-attachments/assets/cd7b0413-4c3d-415d-89a3-28ff4a7c494b
+> On your server, the menu shows the options of **your** scripts.
 
 ---
 
-## Features
+## ✨ Features
 
-- **Right-click menu** instead of the classic "eye": hold the key, a cursor appears, right-click what you want.
-- **Drop-in replacement** for `ox_target`, `qtarget` and `qb-target`: your existing scripts keep working, nothing to edit.
-- **Standalone**: no framework, no ox_lib, no database required. QBox / QBCore / ESX are detected automatically
-  for job and item filters.
-- **Precise targeting**: picks the exact prop under the cursor, even map props without their own collision
-  (wall ATMs, built-in furniture...).
-- **Menu stays open** while the key is held: open several doors in a row, labels update live.
-- **Built-in vehicle options** (can be disabled): open / close the door, hood or trunk you click on, roll
-  windows up / down from inside (synced to every player by the server, anti-spam, seat checked).
-- **Clean UI**: dark thin-line theme, never goes off screen, long lists split into columns, submenus,
-  checkboxes, info rows, tooltips.
-- **13 languages** for the built-in options (EN, FR, DE, ES, IT, PT, NL, PL, TR, RU, ZH, JA, KO), easy to add more.
-- **Light**: no loop runs while the menu is closed; targeting is computed on right-click only.
-- **Its own API** for custom menus (items, checkboxes, submenus, separators, info rows).
+<table>
+  <tr>
+    <td width="50%">🖱️ <b>Right-click menu</b><br><sub>Instead of the classic "eye": hold the key, a cursor appears, right-click what you want.</sub></td>
+    <td width="50%">🔌 <b>Drop-in replacement</b><br><sub>For <code>ox_target</code>, <code>qtarget</code> and <code>qb-target</code>: your existing scripts keep working, nothing to edit.</sub></td>
+  </tr>
+  <tr>
+    <td>🧩 <b>Standalone</b><br><sub>No framework, no ox_lib, no database. QBox / QBCore / ESX are detected automatically for job and item filters.</sub></td>
+    <td>🎯 <b>Precise targeting</b><br><sub>Picks the exact prop under the cursor, even map props without their own collision (wall ATMs, built-in furniture...).</sub></td>
+  </tr>
+  <tr>
+    <td>📌 <b>Menu stays open</b><br><sub>While the key is held: open several doors in a row, labels update live.</sub></td>
+    <td>🚗 <b>Built-in vehicle options</b><br><sub>Open / close the door, hood or trunk you click on, roll windows from inside (synced by the server).</sub></td>
+  </tr>
+  <tr>
+    <td>🎨 <b>Clean UI</b><br><sub>Dark thin-line theme, never off screen, long lists in columns, submenus, checkboxes, tooltips.</sub></td>
+    <td>🌍 <b>13 languages</b><br><sub>EN, FR, DE, ES, IT, PT, NL, PL, TR, RU, ZH, JA, KO — easy to add more.</sub></td>
+  </tr>
+  <tr>
+    <td>⚡ <b>Light</b><br><sub>No loop runs while the menu is closed; targeting is computed on right-click only.</sub></td>
+    <td>🛠️ <b>Its own API</b><br><sub>Build your own menus: items, checkboxes, submenus, separators, info rows.</sub></td>
+  </tr>
+</table>
 
-## How it works
+## 🧭 How it works
 
-1. Hold the **menu key** (default <kbd>Left Alt</kbd>): the cursor appears.
-2. **Right-click** in the world.
-3. A raycast from the cursor finds the entity / model / position under it.
-4. Every registered option (ox_target, qtarget, qb-target and the Pure-Target API) is checked.
-5. The matching options are merged into one menu.
+```mermaid
+flowchart LR
+    A["⌨️ Hold Left Alt"] --> B["🖱️ Right-click"]
+    B --> C["🎯 Raycast under the cursor"]
+    C --> D["🔎 ox_target / qtarget / qb-target<br/>+ Pure-Target options checked"]
+    D --> E["📋 One merged menu"]
+```
 
 ---
 
-## Installation
+## 📦 Installation
 
-1. Download the [latest release](../../releases) (or clone this repository).
-2. Put the folder in your `resources` and **name it `pure-target`**.
+1. **[Download `pure-target.zip`](https://github.com/stefanlesuisse/pure-target/releases/latest)** and extract it into your `resources`.
+2. The folder **must be named `pure-target`**.
 3. In `server.cfg`, start it **before** the scripts that use a target system:
 
 ```cfg
 ensure pure-target
 ```
 
-4. **Remove or stop** `ox_target`, `qtarget` and `qb-target`: pure-target replaces them
-   (it declares `provide 'ox_target'`, `provide 'qtarget'` and `provide 'qb-target'`).
+> [!WARNING]
+> **Remove or stop** `ox_target`, `qtarget` and `qb-target`: Pure-Target replaces them
+> (it declares `provide 'ox_target'`, `provide 'qtarget'` and `provide 'qb-target'`).
 
-The UI is already built (`web/build`): nothing to compile.
+> [!TIP]
+> The UI is already built (`web/build`): nothing to compile.
 
-### Requirements
-
-- A recent FiveM server artifact (Lua 5.4, `cerulean`). OneSync is recommended for the window sync.
-- Nothing else. Optional: `ox_inventory`, `qbx_core`, `qb-core` or `es_extended` for `items` / `groups` filters.
+**Requirements:** a recent FiveM server artifact (Lua 5.4, `cerulean`), OneSync recommended for the window sync.
+Optional: `ox_inventory`, `qbx_core`, `qb-core` or `es_extended` for the `items` / `groups` filters.
 
 ---
 
-## Configuration
+## ⚙️ Configuration
 
 Everything is in [`shared/config.lua`](shared/config.lua):
 
@@ -110,7 +128,8 @@ Everything is in [`shared/config.lua`](shared/config.lua):
 | `VehicleDoors` | `true` | Built-in door / hood / trunk options. |
 | `VehicleWindows` | `true` | Built-in window options. |
 
-Example, blocking the menu while dead:
+<details>
+<summary><b>Example: block the menu while dead</b></summary>
 
 ```lua
 Config.CanOpen = function()
@@ -118,9 +137,11 @@ Config.CanOpen = function()
 end
 ```
 
+</details>
+
 ---
 
-## Usage
+## 🛠️ Usage
 
 ### With ox_target (unchanged code)
 
@@ -153,19 +174,21 @@ ContextMenu:Register(function(entity, entityType, worldPos, hit)
 end)
 ```
 
-More in [`examples/`](examples/) (a ready-to-start example resource) and every export in
-[`exports.md`](exports.md).
+> [!TIP]
+> More in [`examples/`](examples/) (a ready-to-start example resource) and every export in [`exports.md`](exports.md).
 
 ### Pure-Target extensions to ox_target options
 
-- `group = 'Police'`: options sharing a group are put in a submenu (`groupIcon`, `groupColor`).
-- `description = '...'`: tooltip.
-- `closeOnClick = true`: close the menu after this option (default: stays open while the key is held).
-- `addGlobalSelfPlayer` / `addGlobalOtherPlayer`: options on yourself / on other players.
+| Field | Effect |
+| --- | --- |
+| `group = 'Police'` | Options sharing a group are put in a submenu (`groupIcon`, `groupColor`). |
+| `description = '...'` | Tooltip. |
+| `closeOnClick = true` | Close the menu after this option (default: stays open while the key is held). |
+| `addGlobalSelfPlayer` / `addGlobalOtherPlayer` | Options on yourself / on other players. |
 
 ---
 
-## Differences with ox_target
+## ⚖️ Differences with ox_target
 
 - No "eye" and no hover detection: options are computed **once per right-click**, which is why the resource
   costs nothing while the menu is closed.
@@ -173,16 +196,18 @@ More in [`examples/`](examples/) (a ready-to-start example resource) and every e
 - Nested menus (`openMenu` / `menuName`) are shown as submenus.
 - Supported option fields: see [`exports.md`](exports.md#option-schema).
 
-## Security
+## 🔒 Security
 
-`groups`, `items`, `distance` and `canInteract` only decide what is **shown**. Any server event can be
-triggered by a cheater with any arguments: your server scripts must always check job, items, distance, etc.
-themselves. The built-in window option is checked server-side (player seated in that vehicle, right seat,
-rate limit).
+> [!IMPORTANT]
+> `groups`, `items`, `distance` and `canInteract` only decide what is **shown**. Any server event can be
+> triggered by a cheater with any arguments: your server scripts must always check job, items, distance, etc.
+> themselves. The built-in window option is checked server-side (player seated in that vehicle, right seat,
+> rate limit).
 
 ---
 
-## Building the UI (only if you change it)
+<details>
+<summary><b>🎨 Building the UI (only if you change it)</b></summary>
 
 ```bash
 cd web
@@ -196,9 +221,12 @@ npm run build
 | `npm run build` | Production build into `web/build`. |
 | `npm run game` | Rebuild on every change (`vite build --watch`). |
 
----
+The colours of the menu are at the top of `web/src/features/contextMenu/style.scss`.
 
-## Project structure
+</details>
+
+<details>
+<summary><b>🗂️ Project structure</b></summary>
 
 ```
 pure-target/
@@ -217,9 +245,11 @@ pure-target/
 └─ web/                     # React (Vite) UI — build/ is served
 ```
 
+</details>
+
 ---
 
-## Credits
+## 💖 Credits
 
 - **[stefanlesuisse](https://github.com/stefanlesuisse)** — author of Pure-Target.
 - **[OffSey](https://www.youtube.com/watch?v=peS7m275vEY)** — original Off-Target, which Pure-Target is a fork of.
@@ -229,6 +259,17 @@ pure-target/
   **[qtarget](https://github.com/overextended/qtarget)** — the APIs mirrored by the compatibility layers.
 - Icons: [Tabler Icons](https://tabler.io/icons) and [Font Awesome](https://fontawesome.com) (free).
 
-## License
+## 📄 License
 
 [MIT](LICENSE) — free to use, modify and share, keep the copyright notice. No warranty.
+
+<div align="center">
+
+<br>
+
+**If Pure-Target helps your server, leave a ⭐ on the repository!**
+
+[![YouTube](https://img.shields.io/badge/YouTube-%40ma3iich-red?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@ma3iich)
+[![GitHub](https://img.shields.io/badge/GitHub-stefanlesuisse-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/stefanlesuisse)
+
+</div>
