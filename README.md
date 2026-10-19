@@ -221,6 +221,7 @@ pure-target/
 
 ## Credits
 
+- **[stefanlesuisse](https://github.com/stefanlesuisse)** — author of Pure-Target.
 - **[OffSey](https://www.youtube.com/watch?v=peS7m275vEY)** — original Off-Target, which Pure-Target is a fork of.
 - **[Kiminaze — ContextMenu](https://github.com/Kiminaze/ContextMenu)** — the original right-click context
   menu whose ID-based export design this resource follows.

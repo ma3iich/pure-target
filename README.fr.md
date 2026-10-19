@@ -227,6 +227,7 @@ pure-target/
 
 ## Crédits
 
+- **[stefanlesuisse](https://github.com/stefanlesuisse)** — auteur de Pure-Target.
 - **[OffSey](https://www.youtube.com/watch?v=peS7m275vEY)** — Off-Target d'origine, dont Pure-Target est un fork.
 - **[Kiminaze — ContextMenu](https://github.com/Kiminaze/ContextMenu)** — le menu clic droit d'origine, dont
   cette ressource suit le principe d'exports par identifiant.

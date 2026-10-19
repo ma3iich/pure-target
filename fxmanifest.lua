@@ -3,7 +3,7 @@ game 'gta5'
 lua54 'yes'
 
 name 'pure-target'
-author 'Pure-Target contributors (fork of Off-Target by OffSey)'
+author 'stefanlesuisse (fork of Off-Target by OffSey)'
 description 'Standalone right-click context menu with drop-in ox_target / qtarget / qb-target compatibility'
 version '1.0.0'
 
