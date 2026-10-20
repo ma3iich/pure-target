@@ -22,6 +22,7 @@ Maintiens <kbd>Alt gauche</kbd>, fais un clic droit sur n'importe quoi dans le m
 **[⬇️ Télécharger](https://github.com/stefanlesuisse/pure-target/releases/latest)** &nbsp;·&nbsp;
 **[📦 Installation](#-installation)** &nbsp;·&nbsp;
 **[⚙️ Configuration](#%EF%B8%8F-configuration)** &nbsp;·&nbsp;
+**[❓ FAQ](#-faq)** &nbsp;·&nbsp;
 **[📚 Exports](exports.md)** &nbsp;·&nbsp;
 **[💬 Aide (Discord)](https://discord.gg/73w9ZanWyv)**
 
@@ -247,6 +248,101 @@ pure-target/
 ├─ examples/                # ressource d'exemple
 └─ web/                     # interface React (Vite) — build/ est servi
 ```
+
+</details>
+
+---
+
+## ❓ FAQ
+
+<div align="center">
+
+[![Discord](https://img.shields.io/badge/Besoin%20d'aide%20%3F-Rejoins%20le%20Discord-5865F2?logo=discord&logoColor=white)](https://discord.gg/73w9ZanWyv)
+
+<sub>Ta question n'est pas là ? Pose-la sur le Discord.</sub>
+
+</div>
+
+<details>
+<summary><b>Le menu ne s'ouvre pas quand je maintiens Alt.</b></summary>
+
+- Un autre script de ciblage tourne encore (`ox_target`, `qtarget`, `qb-target`) : retire-le ou arrête-le.
+- Un autre script utilise déjà <kbd>Alt gauche</kbd> : change `Config.MenuKey` dans `shared/config.lua`, ou change la touche en jeu dans *Paramètres → Raccourcis clavier → FiveM*.
+- Ton `Config.CanOpen` renvoie `false` (par exemple quand le joueur est mort).
+
+</details>
+
+<details>
+<summary><b>Je dois modifier mes scripts ox_target / qb-target ?</b></summary>
+
+Non. Pure-Target répond aux exports `ox_target`, `qtarget` et `qb-target` : tes scripts marchent tels quels.
+
+</details>
+
+<details>
+<summary><b>Les options d'un de mes scripts n'apparaissent pas.</b></summary>
+
+- Le dossier doit s'appeler exactement `pure-target`.
+- `ensure pure-target` doit être **avant** ce script dans `server.cfg`.
+- L'option utilise `groups` (métiers) et aucun framework n'a été trouvé : règle `Config.Framework` (`'qbx'`, `'qb'`, `'esx'`) dans `shared/config.lua`.
+- Tu es trop loin : les options sans `distance` s'affichent jusqu'à 7 m du point cliqué (`Config.DefaultDistance`).
+- Son `canInteract` renvoie `nil` ou `false` : comme avec ox_target, l'option est cachée.
+
+</details>
+
+<details>
+<summary><b>J'ai redémarré pure-target et toutes les options ont disparu.</b></summary>
+
+Chaque script enregistre ses options quand **il** démarre. Après `restart pure-target`, redémarre aussi les scripts qui l'utilisent, ou plus simplement tout le serveur.
+
+</details>
+
+<details>
+<summary><b>Ça marche avec ESX, QBCore, QBox ou sans framework ?</b></summary>
+
+Oui. QBox, QBCore et ESX sont détectés automatiquement pour les filtres `groups` et `items`, et il marche aussi sans aucun framework. Pour un autre framework, écris tes propres `Config.HasGroup` / `Config.GetItemCount`.
+
+</details>
+
+<details>
+<summary><b>Je peux garder ox_target en même temps ?</b></summary>
+
+Non. Pure-Target le remplace (`provide 'ox_target'`, `'qtarget'`, `'qb-target'`) : garde seulement Pure-Target.
+
+</details>
+
+<details>
+<summary><b>Comment changer la langue, ou retirer les options portes / fenêtres ?</b></summary>
+
+Dans `shared/config.lua` : `Config.Locale = 'fr'` (13 langues), et `Config.VehicleDoors = false` / `Config.VehicleWindows = false`.
+
+</details>
+
+<details>
+<summary><b>Je peux changer les couleurs du menu ?</b></summary>
+
+Oui : modifie les couleurs en haut de `web/src/features/contextMenu/style.scss`, puis recompile l'interface (`npm ci` puis `npm run build` dans `web/`).
+
+</details>
+
+<details>
+<summary><b>Ça consomme des performances ?</b></summary>
+
+Aucune boucle ne tourne quand le menu est fermé. Le ciblage n'est calculé qu'au moment du clic droit.
+
+</details>
+
+<details>
+<summary><b>C'est sécurisé ?</b></summary>
+
+Le menu décide seulement de ce qui est **affiché**. Comme avec ox_target, tes scripts serveur doivent toujours vérifier eux-mêmes le métier, les objets et la distance : un tricheur peut déclencher n'importe quel événement serveur directement.
+
+</details>
+
+<details>
+<summary><b>Je peux le modifier, le partager ou l'utiliser sur mon serveur ?</b></summary>
+
+Oui, il est sous licence MIT : libre d'utiliser, modifier et partager. Garde juste la mention de copyright du fichier `LICENSE`.
 
 </details>
 

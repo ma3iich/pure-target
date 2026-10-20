@@ -22,6 +22,7 @@ Hold <kbd>Left Alt</kbd>, right-click anything in the world, and act on it.
 **[⬇️ Download](https://github.com/stefanlesuisse/pure-target/releases/latest)** &nbsp;·&nbsp;
 **[📦 Installation](#-installation)** &nbsp;·&nbsp;
 **[⚙️ Configuration](#%EF%B8%8F-configuration)** &nbsp;·&nbsp;
+**[❓ FAQ](#-faq)** &nbsp;·&nbsp;
 **[📚 Exports](exports.md)** &nbsp;·&nbsp;
 **[💬 Support](https://discord.gg/73w9ZanWyv)**
 
@@ -246,6 +247,101 @@ pure-target/
 ├─ examples/                # example resource
 └─ web/                     # React (Vite) UI — build/ is served
 ```
+
+</details>
+
+---
+
+## ❓ FAQ
+
+<div align="center">
+
+[![Discord](https://img.shields.io/badge/Need%20more%20help%3F-Join%20our%20Discord-5865F2?logo=discord&logoColor=white)](https://discord.gg/73w9ZanWyv)
+
+<sub>Your question is not here? Ask it on the Discord.</sub>
+
+</div>
+
+<details>
+<summary><b>The menu does not open when I hold Alt.</b></summary>
+
+- Another target resource is still running (`ox_target`, `qtarget`, `qb-target`): remove or stop it.
+- Another script already uses <kbd>Left Alt</kbd>: change `Config.MenuKey` in `shared/config.lua`, or rebind it in game in *Settings → Key Bindings → FiveM*.
+- Your `Config.CanOpen` returns `false` (for example while dead).
+
+</details>
+
+<details>
+<summary><b>Do I have to change my ox_target / qb-target scripts?</b></summary>
+
+No. Pure-Target answers the `ox_target`, `qtarget` and `qb-target` exports, so your scripts keep working as they are.
+
+</details>
+
+<details>
+<summary><b>The options of one of my scripts do not show up.</b></summary>
+
+- The folder must be named exactly `pure-target`.
+- `ensure pure-target` must be **before** that script in `server.cfg`.
+- The option uses `groups` (jobs) and no framework was found: set `Config.Framework` (`'qbx'`, `'qb'`, `'esx'`) in `shared/config.lua`.
+- You are too far: options without a `distance` are shown up to 7 m from the point you click (`Config.DefaultDistance`).
+- Its `canInteract` returns `nil` or `false`: like ox_target, the option is hidden.
+
+</details>
+
+<details>
+<summary><b>I restarted pure-target and every option disappeared.</b></summary>
+
+Options are registered by each script when **that script** starts. After `restart pure-target`, restart the scripts that use it too, or simply restart the whole server.
+
+</details>
+
+<details>
+<summary><b>Does it work with ESX, QBCore, QBox or without a framework?</b></summary>
+
+Yes. QBox, QBCore and ESX are detected automatically for the `groups` and `items` filters, and it also works with no framework at all. For another framework, write your own `Config.HasGroup` / `Config.GetItemCount`.
+
+</details>
+
+<details>
+<summary><b>Can I run ox_target and Pure-Target at the same time?</b></summary>
+
+No. Pure-Target replaces them (`provide 'ox_target'`, `'qtarget'`, `'qb-target'`): keep only Pure-Target.
+
+</details>
+
+<details>
+<summary><b>How do I change the language, or remove the door / window options?</b></summary>
+
+In `shared/config.lua`: `Config.Locale = 'fr'` (13 languages), and `Config.VehicleDoors = false` / `Config.VehicleWindows = false`.
+
+</details>
+
+<details>
+<summary><b>Can I change the colours of the menu?</b></summary>
+
+Yes: edit the colours at the top of `web/src/features/contextMenu/style.scss`, then rebuild the UI (`npm ci` then `npm run build` in `web/`).
+
+</details>
+
+<details>
+<summary><b>Does it cost performance?</b></summary>
+
+No loop runs while the menu is closed. Targeting is only computed when you right-click.
+
+</details>
+
+<details>
+<summary><b>Is it secure?</b></summary>
+
+The menu only decides what is **shown**. Like with ox_target, your server scripts must always check job, items and distance themselves: a cheater can trigger any server event directly.
+
+</details>
+
+<details>
+<summary><b>Can I modify it, share it or use it on my server?</b></summary>
+
+Yes, it is MIT licensed: free to use, modify and share. Just keep the copyright notice in `LICENSE`.
 
 </details>
 
