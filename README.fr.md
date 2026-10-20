@@ -15,18 +15,18 @@ Maintiens <kbd>Alt gauche</kbd>, fais un clic droit sur n'importe quoi dans le m
 [![Lua](https://img.shields.io/badge/Lua-5.4-2C2D72?logo=lua&logoColor=white)](https://www.lua.org)
 [![Standalone](https://img.shields.io/badge/framework-standalone-6e7681)](#%EF%B8%8F-configuration)
 [![License](https://img.shields.io/badge/license-MIT-3fb950)](LICENSE)
-[![Downloads](https://img.shields.io/github/downloads/stefanlesuisse/pure-target/total?label=Downloads&color=2ea44f)](https://github.com/stefanlesuisse/pure-target/releases)
+[![Downloads](https://img.shields.io/github/downloads/ma3iich/pure-target/total?label=Downloads&color=2ea44f)](https://github.com/ma3iich/pure-target/releases)
 [![YouTube](https://img.shields.io/badge/YouTube-%40ma3iich-red?logo=youtube&logoColor=white)](https://www.youtube.com/@ma3iich)
 [![Discord](https://img.shields.io/badge/Discord-Support-5865F2?logo=discord&logoColor=white)](https://discord.gg/73w9ZanWyv)
 
-**[⬇️ Télécharger](https://github.com/stefanlesuisse/pure-target/releases/latest)** &nbsp;·&nbsp;
+**[⬇️ Télécharger](https://github.com/ma3iich/pure-target/releases/latest)** &nbsp;·&nbsp;
 **[📦 Installation](#-installation)** &nbsp;·&nbsp;
 **[⚙️ Configuration](#%EF%B8%8F-configuration)** &nbsp;·&nbsp;
 **[❓ FAQ](#-faq)** &nbsp;·&nbsp;
 **[📚 Exports](exports.md)** &nbsp;·&nbsp;
 **[💬 Aide (Discord)](https://discord.gg/73w9ZanWyv)**
 
-<sub>Fork d'<a href="https://www.youtube.com/watch?v=peS7m275vEY">Off-Target</a> par OffSey · Créé par <a href="https://github.com/stefanlesuisse">stefanlesuisse</a></sub>
+<sub>Fork d'<a href="https://www.youtube.com/watch?v=peS7m275vEY">Off-Target</a> par OffSey · Créé par <a href="https://github.com/ma3iich">ma3iich</a></sub>
 
 </div>
 
@@ -92,7 +92,7 @@ flowchart LR
 
 ## 📦 Installation
 
-1. **[Télécharge `pure-target.zip`](https://github.com/stefanlesuisse/pure-target/releases/latest)** et extrais-le dans tes `resources`.
+1. **[Télécharge `pure-target.zip`](https://github.com/ma3iich/pure-target/releases/latest)** et extrais-le dans tes `resources`.
 2. Le dossier **doit s'appeler `pure-target`**.
 3. Dans `server.cfg`, démarre-le **avant** les scripts qui utilisent un système de ciblage :
 
@@ -350,7 +350,7 @@ Oui, il est sous licence MIT : libre d'utiliser, modifier et partager. Garde jus
 
 ## 💖 Crédits
 
-- **[stefanlesuisse](https://github.com/stefanlesuisse)** — auteur de Pure-Target.
+- **[ma3iich](https://github.com/ma3iich)** — auteur de Pure-Target.
 - **[OffSey](https://www.youtube.com/watch?v=peS7m275vEY)** — Off-Target d'origine, dont Pure-Target est un fork.
 - **[Kiminaze — ContextMenu](https://github.com/Kiminaze/ContextMenu)** — le menu clic droit d'origine, dont
   cette ressource suit le principe d'exports par identifiant.
@@ -370,6 +370,6 @@ Oui, il est sous licence MIT : libre d'utiliser, modifier et partager. Garde jus
 
 [![YouTube](https://img.shields.io/badge/YouTube-%40ma3iich-red?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@ma3iich)
 [![Discord](https://img.shields.io/badge/Discord-Support-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/73w9ZanWyv)
-[![GitHub](https://img.shields.io/badge/GitHub-stefanlesuisse-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/stefanlesuisse)
+[![GitHub](https://img.shields.io/badge/GitHub-ma3iich-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ma3iich)
 
 </div>
