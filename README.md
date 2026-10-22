@@ -41,7 +41,7 @@ Hold <kbd>Left Alt</kbd>, right-click anything in the world, and act on it.
     <th width="33%">👥 On another player</th>
   </tr>
   <tr>
-    <td><video src="https://github.com/user-attachments/assets/febb8a09-3055-4492-b8f2-6df00d5b6ddb" width="100%" controls muted></video></td>
+    <td><video src="https://github.com/user-attachments/assets/e1cf6a0d-8598-4378-b759-0e73077cf0ac" width="100%" controls muted></video></td>
     <td><video src="https://github.com/user-attachments/assets/3a4e1e92-412c-4db3-99e9-873c5bdfd65a" width="100%" controls muted></video></td>
     <td><video src="https://github.com/user-attachments/assets/72a18f0b-32a2-4ec7-91aa-7314a5673ad0" width="100%" controls muted></video></td>
   </tr>

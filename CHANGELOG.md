@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.0
+
+### Fixed
+- Icons showing as white squares the first time the menu is opened after joining: the Font Awesome and Tabler
+  icon fonts are now included in the resource (`web/build/assets/vendor`, with their licenses) and loaded as soon
+  as the player joins, instead of being downloaded from a CDN on the first right-click.
+
 ## 1.0.0
 
 First release of Pure-Target, a fork of Off-Target 2.0.0 by OffSey. Changes compared to Off-Target 2.0.0:
