@@ -51,7 +51,9 @@ Maintiens <kbd>Alt gauche</kbd>, fais un clic droit sur n'importe quoi dans le m
   </tr>
 </table>
 
-> [!NOTE]
+> **ℹ️ Note**
+
+>
 > Les options visibles dans ces clips viennent des scripts de notre serveur, construits avec l'API de Pure-Target.
 > Sur ton serveur, le menu affiche les options de **tes** propres scripts.
 
@@ -104,18 +106,24 @@ flowchart LR
 ensure pure-target
 ```
 
-> [!WARNING]
+> **⚠️ Attention**
+
+>
 > **Retire ou arrête** `ox_target`, `qtarget` et `qb-target` : Pure-Target les remplace
 > (il déclare `provide 'ox_target'`, `provide 'qtarget'` et `provide 'qb-target'`).
 
-> [!IMPORTANT]
+> **❗ Important**
+
+>
 > **QBCore :** les scripts officiels de QBCore n'utilisent un système de ciblage que si `UseTarget` est activé.
 > Ajoute cette ligne dans `server.cfg` (un serveur QBCore neuf a `setr UseTarget false`) :
 > ```cfg
 > setr UseTarget true
 > ```
 
-> [!TIP]
+> **💡 Astuce**
+
+>
 > L'interface est déjà compilée (`web/build`) : rien à compiler.
 
 **Prérequis :** un artefact de serveur FiveM récent (Lua 5.4, `cerulean`), OneSync conseillé pour la synchro des fenêtres.
@@ -188,7 +196,9 @@ ContextMenu:Register(function(entity, entityType, worldPos, hit)
 end)
 ```
 
-> [!TIP]
+> **💡 Astuce**
+
+>
 > D'autres exemples dans [`examples/`](examples/) (une ressource d'exemple prête à démarrer) et toutes les fonctions
 > dans [`exports.md`](exports.md) (en anglais).
 
@@ -213,7 +223,9 @@ end)
 
 ## 🔒 Sécurité
 
-> [!IMPORTANT]
+> **❗ Important**
+
+>
 > `groups`, `items`, `distance` et `canInteract` décident seulement de ce qui est **affiché**. Un tricheur peut
 > déclencher n'importe quel événement serveur avec n'importe quels arguments : tes scripts serveur doivent
 > toujours vérifier eux-mêmes le métier, les objets, la distance, etc. L'option des fenêtres intégrée est
@@ -439,7 +451,9 @@ Hold <kbd>Left Alt</kbd>, right-click anything in the world, and act on it.
   </tr>
 </table>
 
-> [!NOTE]
+> **ℹ️ Note**
+
+>
 > The options shown in these clips come from our own server's scripts, built with Pure-Target's API.
 > On your server, the menu shows the options of **your** scripts.
 
@@ -492,18 +506,24 @@ flowchart LR
 ensure pure-target
 ```
 
-> [!WARNING]
+> **⚠️ Warning**
+
+>
 > **Remove or stop** `ox_target`, `qtarget` and `qb-target`: Pure-Target replaces them
 > (it declares `provide 'ox_target'`, `provide 'qtarget'` and `provide 'qb-target'`).
 
-> [!IMPORTANT]
+> **❗ Important**
+
+>
 > **QBCore:** the official QBCore scripts only use a target system when `UseTarget` is enabled.
 > Add this line to `server.cfg` (a fresh QBCore server has `setr UseTarget false`):
 > ```cfg
 > setr UseTarget true
 > ```
 
-> [!TIP]
+> **💡 Tip**
+
+>
 > The UI is already built (`web/build`): nothing to compile.
 
 **Requirements:** a recent FiveM server artifact (Lua 5.4, `cerulean`), OneSync recommended for the window sync.
@@ -576,7 +596,9 @@ ContextMenu:Register(function(entity, entityType, worldPos, hit)
 end)
 ```
 
-> [!TIP]
+> **💡 Tip**
+
+>
 > More in [`examples/`](examples/) (a ready-to-start example resource) and every export in [`exports.md`](exports.md).
 
 ### Pure-Target extensions to ox_target options
@@ -600,7 +622,9 @@ end)
 
 ## 🔒 Security
 
-> [!IMPORTANT]
+> **❗ Important**
+
+>
 > `groups`, `items`, `distance` and `canInteract` only decide what is **shown**. Any server event can be
 > triggered by a cheater with any arguments: your server scripts must always check job, items, distance, etc.
 > themselves. The built-in window option is checked server-side (player seated in that vehicle, right seat,
