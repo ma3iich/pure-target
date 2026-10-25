@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.2.0
+
+### Fixed
+- qb-target `SpawnPed` (+ `RemoveSpawnedPed`, `DeletePeds`, `GetPeds`): peds spawned through qb-target did not
+  appear (qb-taxijob). They are deleted when the resource that spawned them stops.
+- `RemoveZone(name)` now also removes the options added with `AddEntityZone(name, ...)` (qb-hotdogjob, qb-drugs,
+  qb-vehiclesales: the selling option stayed on the previous ped).
+
+### Documentation
+- README (EN / FR): `setr UseTarget true` is required for the QBCore scripts to use a target system.
+
 ## 1.1.0
 
 ### Fixed

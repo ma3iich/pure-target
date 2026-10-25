@@ -104,6 +104,13 @@ ensure pure-target
 > **Retire ou arrête** `ox_target`, `qtarget` et `qb-target` : Pure-Target les remplace
 > (il déclare `provide 'ox_target'`, `provide 'qtarget'` et `provide 'qb-target'`).
 
+> [!IMPORTANT]
+> **QBCore :** les scripts officiels de QBCore n'utilisent un système de ciblage que si `UseTarget` est activé.
+> Ajoute cette ligne dans `server.cfg` (un serveur QBCore neuf a `setr UseTarget false`) :
+> ```cfg
+> setr UseTarget true
+> ```
+
 > [!TIP]
 > L'interface est déjà compilée (`web/build`) : rien à compiler.
 

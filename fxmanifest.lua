@@ -5,7 +5,7 @@ lua54 'yes'
 name 'pure-target'
 author 'ma3iich (fork of Off-Target by OffSey)'
 description 'Standalone right-click context menu with drop-in ox_target / qtarget / qb-target compatibility'
-version '1.1.0'
+version '1.2.0'
 
 provide 'ox_target'
 provide 'qtarget'

@@ -104,6 +104,13 @@ ensure pure-target
 > **Remove or stop** `ox_target`, `qtarget` and `qb-target`: Pure-Target replaces them
 > (it declares `provide 'ox_target'`, `provide 'qtarget'` and `provide 'qb-target'`).
 
+> [!IMPORTANT]
+> **QBCore:** the official QBCore scripts only use a target system when `UseTarget` is enabled.
+> Add this line to `server.cfg` (a fresh QBCore server has `setr UseTarget false`):
+> ```cfg
+> setr UseTarget true
+> ```
+
 > [!TIP]
 > The UI is already built (`web/build`): nothing to compile.
 
