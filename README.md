@@ -19,14 +19,14 @@ Hold <kbd>Left Alt</kbd>, right-click anything in the world, and act on it.
 [![License](https://img.shields.io/badge/license-MIT-3fb950)](LICENSE)
 [![Downloads](https://img.shields.io/github/downloads/ma3iich/pure-target/total?label=Downloads&color=2ea44f)](https://github.com/ma3iich/pure-target/releases)
 [![YouTube](https://img.shields.io/badge/YouTube-%40ma3iich-red?logo=youtube&logoColor=white)](https://www.youtube.com/@ma3iich)
-[![Discord](https://img.shields.io/badge/Discord-Support-5865F2?logo=discord&logoColor=white)](https://discord.gg/73w9ZanWyv)
+[![Discord](https://img.shields.io/badge/Discord-Support-5865F2?logo=discord&logoColor=white)](https://discord.gg/jJgtTScUYp)
 
 **[⬇️ Download](https://github.com/ma3iich/pure-target/releases/latest)** &nbsp;·&nbsp;
 **[📦 Installation](#-installation)** &nbsp;·&nbsp;
 **[⚙️ Configuration](#%EF%B8%8F-configuration)** &nbsp;·&nbsp;
 **[❓ FAQ](#-faq)** &nbsp;·&nbsp;
 **[📚 Exports](exports.md)** &nbsp;·&nbsp;
-**[💬 Support](https://discord.gg/73w9ZanWyv)**
+**[💬 Support](https://discord.gg/jJgtTScUYp)**
 
 <sub>Fork of <a href="https://www.youtube.com/watch?v=peS7m275vEY">Off-Target</a> by OffSey · Made by <a href="https://github.com/ma3iich">ma3iich</a></sub>
 
@@ -265,7 +265,7 @@ pure-target/
 
 <div align="center">
 
-[![Discord](https://img.shields.io/badge/Need%20more%20help%3F-Join%20our%20Discord-5865F2?logo=discord&logoColor=white)](https://discord.gg/73w9ZanWyv)
+[![Discord](https://img.shields.io/badge/Need%20more%20help%3F-Join%20our%20Discord-5865F2?logo=discord&logoColor=white)](https://discord.gg/jJgtTScUYp)
 
 <sub>Your question is not here? Ask it on the Discord.</sub>
 
@@ -377,7 +377,7 @@ Yes, it is MIT licensed: free to use, modify and share. Just keep the copyright 
 **If Pure-Target helps your server, leave a ⭐ on the repository!**
 
 [![YouTube](https://img.shields.io/badge/YouTube-%40ma3iich-red?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@ma3iich)
-[![Discord](https://img.shields.io/badge/Discord-Support-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/73w9ZanWyv)
+[![Discord](https://img.shields.io/badge/Discord-Support-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/jJgtTScUYp)
 [![GitHub](https://img.shields.io/badge/GitHub-ma3iich-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ma3iich)
 
 </div>
