@@ -1,5 +1,7 @@
 <div align="center">
 
+<sub>🧩 <b>Pure suite</b> &nbsp;·&nbsp; <b>Pure-Target</b> (right-click menu) &nbsp;·&nbsp; <a href="https://github.com/ma3iich/pure_inventory">Pure Inventory</a> (inventory) &nbsp;—&nbsp; each one works standalone, and they work together</sub>
+
 [![English](https://img.shields.io/badge/Language-English-2ea44f)](README.md) [![Français](https://img.shields.io/badge/Langue-Fran%C3%A7ais-555)](README.fr.md)
 
 <img src="docs/banner.png" alt="Pure-Target — the right-click context menu for FiveM" width="100%">

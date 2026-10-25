@@ -1,5 +1,7 @@
 <div align="center">
 
+<sub>🧩 <b>Suite Pure</b> &nbsp;·&nbsp; <b>Pure-Target</b> (menu clic droit) &nbsp;·&nbsp; <a href="https://github.com/ma3iich/pure_inventory">Pure Inventory</a> (inventaire) &nbsp;—&nbsp; chacun marche seul, et ils marchent ensemble</sub>
+
 [![English](https://img.shields.io/badge/Language-English-555)](README.md) [![Français](https://img.shields.io/badge/Langue-Fran%C3%A7ais-2ea44f)](README.fr.md)
 
 <img src="docs/banner.png" alt="Pure-Target — le menu clic droit pour FiveM" width="100%">
