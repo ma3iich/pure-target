@@ -52,7 +52,6 @@ Maintiens <kbd>Alt gauche</kbd>, fais un clic droit sur n'importe quoi dans le m
 </table>
 
 > **ℹ️ Note**
-
 >
 > Les options visibles dans ces clips viennent des scripts de notre serveur, construits avec l'API de Pure-Target.
 > Sur ton serveur, le menu affiche les options de **tes** propres scripts.
@@ -107,13 +106,11 @@ ensure pure-target
 ```
 
 > **⚠️ Attention**
-
 >
 > **Retire ou arrête** `ox_target`, `qtarget` et `qb-target` : Pure-Target les remplace
 > (il déclare `provide 'ox_target'`, `provide 'qtarget'` et `provide 'qb-target'`).
 
 > **❗ Important**
-
 >
 > **QBCore :** les scripts officiels de QBCore n'utilisent un système de ciblage que si `UseTarget` est activé.
 > Ajoute cette ligne dans `server.cfg` (un serveur QBCore neuf a `setr UseTarget false`) :
@@ -122,7 +119,6 @@ ensure pure-target
 > ```
 
 > **💡 Astuce**
-
 >
 > L'interface est déjà compilée (`web/build`) : rien à compiler.
 
@@ -197,7 +193,6 @@ end)
 ```
 
 > **💡 Astuce**
-
 >
 > D'autres exemples dans [`examples/`](examples/) (une ressource d'exemple prête à démarrer) et toutes les fonctions
 > dans [`exports.md`](exports.md) (en anglais).
@@ -224,7 +219,6 @@ end)
 ## 🔒 Sécurité
 
 > **❗ Important**
-
 >
 > `groups`, `items`, `distance` et `canInteract` décident seulement de ce qui est **affiché**. Un tricheur peut
 > déclencher n'importe quel événement serveur avec n'importe quels arguments : tes scripts serveur doivent
@@ -452,7 +446,6 @@ Hold <kbd>Left Alt</kbd>, right-click anything in the world, and act on it.
 </table>
 
 > **ℹ️ Note**
-
 >
 > The options shown in these clips come from our own server's scripts, built with Pure-Target's API.
 > On your server, the menu shows the options of **your** scripts.
@@ -507,13 +500,11 @@ ensure pure-target
 ```
 
 > **⚠️ Warning**
-
 >
 > **Remove or stop** `ox_target`, `qtarget` and `qb-target`: Pure-Target replaces them
 > (it declares `provide 'ox_target'`, `provide 'qtarget'` and `provide 'qb-target'`).
 
 > **❗ Important**
-
 >
 > **QBCore:** the official QBCore scripts only use a target system when `UseTarget` is enabled.
 > Add this line to `server.cfg` (a fresh QBCore server has `setr UseTarget false`):
@@ -522,7 +513,6 @@ ensure pure-target
 > ```
 
 > **💡 Tip**
-
 >
 > The UI is already built (`web/build`): nothing to compile.
 
@@ -597,7 +587,6 @@ end)
 ```
 
 > **💡 Tip**
-
 >
 > More in [`examples/`](examples/) (a ready-to-start example resource) and every export in [`exports.md`](exports.md).
 
@@ -623,7 +612,6 @@ end)
 ## 🔒 Security
 
 > **❗ Important**
-
 >
 > `groups`, `items`, `distance` and `canInteract` only decide what is **shown**. Any server event can be
 > triggered by a cheater with any arguments: your server scripts must always check job, items, distance, etc.
