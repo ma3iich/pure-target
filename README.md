@@ -85,13 +85,15 @@ Maintiens <kbd>Alt gauche</kbd>, fais un clic droit sur n'importe quoi dans le m
 
 ## 🧭 Comment ça marche
 
-```mermaid
-flowchart LR
-    A["⌨️ Maintenir Alt gauche"] --> B["🖱️ Clic droit"]
-    B --> C["🎯 Rayon sous le curseur"]
-    C --> D["🔎 Options ox_target / qtarget / qb-target<br/>+ Pure-Target vérifiées"]
-    D --> E["📋 Un seul menu réuni"]
-```
+<table>
+  <tr>
+    <td align="center" width="20%">⌨️<br><b>1. Maintiens Alt gauche</b><br><sub>un curseur apparaît</sub></td>
+    <td align="center" width="20%">🖱️<br><b>2. Clic droit</b><br><sub>sur ce que tu vises</sub></td>
+    <td align="center" width="20%">🎯<br><b>3. Ciblage précis</b><br><sub>un rayon trouve l'objet exact sous le curseur</sub></td>
+    <td align="center" width="20%">🔎<br><b>4. Options vérifiées</b><br><sub>celles d'ox_target, qtarget, qb-target et Pure-Target</sub></td>
+    <td align="center" width="20%">📋<br><b>5. Un seul menu</b><br><sub>tout est réuni, prêt à cliquer</sub></td>
+  </tr>
+</table>
 
 ---
 
@@ -479,13 +481,15 @@ Hold <kbd>Left Alt</kbd>, right-click anything in the world, and act on it.
 
 ## 🧭 How it works
 
-```mermaid
-flowchart LR
-    A["⌨️ Hold Left Alt"] --> B["🖱️ Right-click"]
-    B --> C["🎯 Raycast under the cursor"]
-    C --> D["🔎 ox_target / qtarget / qb-target<br/>+ Pure-Target options checked"]
-    D --> E["📋 One merged menu"]
-```
+<table>
+  <tr>
+    <td align="center" width="20%">⌨️<br><b>1. Hold Left Alt</b><br><sub>a cursor shows up</sub></td>
+    <td align="center" width="20%">🖱️<br><b>2. Right-click</b><br><sub>on what you aim at</sub></td>
+    <td align="center" width="20%">🎯<br><b>3. Precise targeting</b><br><sub>a raycast finds the exact object under the cursor</sub></td>
+    <td align="center" width="20%">🔎<br><b>4. Options checked</b><br><sub>from ox_target, qtarget, qb-target and Pure-Target</sub></td>
+    <td align="center" width="20%">📋<br><b>5. One menu</b><br><sub>everything merged, ready to click</sub></td>
+  </tr>
+</table>
 
 ---
 
