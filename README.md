@@ -1,5 +1,5 @@
 <details name="langue">
-<summary><img src="https://img.shields.io/badge/Langue-Fran%C3%A7ais-2ea44f?style=for-the-badge&labelColor=0D0D0D" alt="Français"></summary>
+<summary><picture><img src="https://img.shields.io/badge/Langue-Fran%C3%A7ais-2ea44f?style=for-the-badge&labelColor=0D0D0D" alt="Français"></picture></summary>
 
 <div align="center">
 
@@ -395,7 +395,7 @@ Oui, il est sous licence MIT : libre d'utiliser, modifier et partager. Garde jus
 
 </details>
 <details name="langue" open>
-<summary><img src="https://img.shields.io/badge/Language-English-2ea44f?style=for-the-badge&labelColor=0D0D0D" alt="English"></summary>
+<summary><picture><img src="https://img.shields.io/badge/Language-English-2ea44f?style=for-the-badge&labelColor=0D0D0D" alt="English"></picture></summary>
 
 <div align="center">
 
