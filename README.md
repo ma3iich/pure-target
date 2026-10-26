@@ -147,6 +147,7 @@ Tout se trouve dans [`shared/config.lua`](shared/config.lua) :
 | `IgnoreVehicleModels` | `{}` | Modèles de véhicules traités comme de simples objets (ex. fauteuils roulants). |
 | `VehicleDoors` | `true` | Options intégrées portes / capot / coffre. |
 | `VehicleWindows` | `true` | Options intégrées des fenêtres. |
+| `CheckUpdates` | `true` | Au démarrage, le serveur regarde sur GitHub s'il existe une version plus récente et l'écrit dans la console (rien n'est téléchargé). |
 
 <details>
 <summary><b>Exemple : bloquer le menu quand le joueur est mort</b></summary>
@@ -543,6 +544,7 @@ Everything is in [`shared/config.lua`](shared/config.lua):
 | `IgnoreVehicleModels` | `{}` | Vehicle models handled as plain objects (e.g. wheelchairs). |
 | `VehicleDoors` | `true` | Built-in door / hood / trunk options. |
 | `VehicleWindows` | `true` | Built-in window options. |
+| `CheckUpdates` | `true` | At start, the server checks GitHub for a newer release and prints a line in the console (nothing is downloaded). |
 
 <details>
 <summary><b>Example: block the menu while dead</b></summary>

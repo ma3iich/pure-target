@@ -29,6 +29,7 @@ client_scripts {
 
 server_scripts {
     'server/vehicle_windows.lua',
+    'server/version.lua',
 }
 
 ui_page 'web/build/index.html'

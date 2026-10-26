@@ -45,3 +45,7 @@ Config.IgnoreVehicleModels = {
 -- Built-in vehicle options (client/modules/vehicle_doors.lua). Set to false to disable them.
 Config.VehicleDoors = true   -- open / close the door, hood or trunk you click on
 Config.VehicleWindows = true -- roll windows up / down from inside the vehicle (synced by the server)
+
+-- Update check: at start, the server asks GitHub for the latest release and prints a line in the
+-- server console when a newer version exists. Nothing is downloaded. false = no request to GitHub.
+Config.CheckUpdates = true
