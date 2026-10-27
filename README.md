@@ -3,7 +3,7 @@
 
 <div align="center">
 
-<sub>🧩 <b>Suite Pure</b> &nbsp;·&nbsp; <b>Pure-Target</b> (menu clic droit) &nbsp;·&nbsp; <a href="https://github.com/ma3iich/pure_inventory">Pure Inventory</a> (inventaire) &nbsp;—&nbsp; chacun marche seul, et ils marchent ensemble</sub>
+<sub>🧩 <b>Suite Pure</b> &nbsp;·&nbsp; <b>Pure-Target</b> (menu clic droit) &nbsp;·&nbsp; <a href="https://github.com/ma3iich/pure_inventory">Pure Inventory</a> (inventaire) &nbsp;·&nbsp; <a href="https://github.com/ma3iich/pure_clothing">Pure Clothing</a> (vêtements) &nbsp;—&nbsp; chacun marche seul, et ils marchent ensemble</sub>
 
 
 <img src="docs/banner.png" alt="Pure-Target — le menu clic droit pour FiveM" width="100%">
@@ -400,7 +400,7 @@ Oui, il est sous licence MIT : libre d'utiliser, modifier et partager. Garde jus
 
 <div align="center">
 
-<sub>🧩 <b>Pure suite</b> &nbsp;·&nbsp; <b>Pure-Target</b> (right-click menu) &nbsp;·&nbsp; <a href="https://github.com/ma3iich/pure_inventory">Pure Inventory</a> (inventory) &nbsp;—&nbsp; each one works standalone, and they work together</sub>
+<sub>🧩 <b>Pure suite</b> &nbsp;·&nbsp; <b>Pure-Target</b> (right-click menu) &nbsp;·&nbsp; <a href="https://github.com/ma3iich/pure_inventory">Pure Inventory</a> (inventory) &nbsp;·&nbsp; <a href="https://github.com/ma3iich/pure_clothing">Pure Clothing</a> (clothes) &nbsp;—&nbsp; each one works standalone, and they work together</sub>
 
 
 <img src="docs/banner.png" alt="Pure-Target — the right-click context menu for FiveM" width="100%">
