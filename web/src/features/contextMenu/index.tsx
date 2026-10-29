@@ -163,7 +163,7 @@ const ContextMenu: React.FC = () => {
   }, [visible, BROWSER]);
 
   // Main menu moved back on screen BEFORE it is painted (useLayoutEffect), measured with offsetWidth/Height:
-  // the opening animation (scale 0.96) made getBoundingClientRect wrong.
+  // the opening animation (scale 0.96) would make getBoundingClientRect wrong.
   useLayoutEffect(() => {
     if (!menuData.length) return;
     const el = anchorRef.current;

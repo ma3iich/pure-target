@@ -312,9 +312,9 @@ end
 -- ---------------------------------------------------------------------------
 -- Map objects without their own collision
 -- Some vanilla props (wall ATMs, built-in furniture...) use the building's collision: the raycast returns
--- the world (type 0) instead of the prop, so addModel / addGlobalObject never matched them. When the ray
+-- the world (type 0) instead of the prop, so addModel / addGlobalObject cannot match them. When the ray
 -- hits the world, we pick the object whose bounding box is crossed by the ray, near the impact point.
--- Only runs where the raycast found no entity: targeting that already worked is unchanged.
+-- Only runs where the raycast found no entity: props with their own collision are targeted as usual.
 -- ---------------------------------------------------------------------------
 
 -- Max distance between the impact point and the point where the ray enters the box.
