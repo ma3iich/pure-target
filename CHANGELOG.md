@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.2.1
+
+### Added
+- Update check: 10 s after the resource starts, the server console says when a newer version is available on
+  GitHub. Nothing is downloaded. `Config.CheckUpdates = false` turns it off.
+
+### Changed
+- Clearer code comments. No change in behaviour.
+
 ## 1.2.0
 
 ### Fixed
